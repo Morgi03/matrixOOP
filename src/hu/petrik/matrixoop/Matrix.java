@@ -73,6 +73,34 @@ public class Matrix {
         return new int[]{sorIndex, oszlopIndex};
     }
 
+    public double sorOsszeg(int sor) {
+        double sum = 0;
+        int sorcounter = 0;
+        sor = sor - 1;
+        for (int i = 0; i < this.m.length; i++) {
+            for (int j = 0; j < this.m[i].length; j++) {
+                if (i == sor) {
+                    sum = sum + this.m[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+
+    public double maxElemOszlop(int oszlop){
+        oszlop = oszlop - 1;
+        double max = this.m[0][oszlop];
+        for (int i = 0; i < this.m.length; i++) {
+            for (int j = 0; j < this.m[i].length; j++) {
+                if (j == oszlop && max < this.m[i][j]) {
+                    max = this.m[i][j];
+                }
+            }
+        }
+        return max;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
