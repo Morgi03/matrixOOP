@@ -20,5 +20,11 @@ public class Main {
         System.out.println(m1);
         System.out.println();
         System.out.println(m1.maxElemOszlop(4));
+        System.out.println();
+        System.out.println();
+        NegyzetesMatrix nm = new NegyzetesMatrix(5);
+        System.out.println(nm);
+        System.out.println();
+        System.out.println(nm.getFoatloElemekOsszeg());
     }
 }

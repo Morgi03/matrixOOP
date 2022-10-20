@@ -21,6 +21,10 @@ public class Matrix {
         // this.m[i].length = oszlop
     }
 
+    public int[][] getM() {
+        return m;
+    }
+
     public int getElemekOsszege() {
         int osszeg = 0;
         for (int[] sor : this.m) {
