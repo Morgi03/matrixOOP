@@ -9,5 +9,12 @@ public class Main {
         Matrix m2 = new Matrix(2,3);
         System.out.println(m2);
         System.out.println();
+        System.out.println(m2.getElemekOsszege());
+        System.out.println();
+        System.out.println(m2.getPozitivElemekSzama());
+        System.out.println();
+        System.out.println(m2.getLegnagyobbElem());
+        System.out.println();
+        System.out.println(m2.getElsoPozitivElem()[0]+" "+m2.getElsoPozitivElem()[1]);
     }
 }
